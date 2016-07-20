@@ -1,0 +1,77 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background:url('../images/bg.jpg');
+    font-family:'楷体';
+}
+
+#content{
+    width: 800px;
+    height: 500px;
+    background:transparent;
+    padding: 20px;
+    margin: 30px auto;
+    margin-top: -5px; 
+    border: 1px solid #666;
+    border-radius: 5px;
+    position: relative;
+}
+
+#personal{
+    width:680px;
+    height:130px;
+    margin: 20px auto;
+}
+
+.head:hover,.name strong:hover,.name span:hover,.menu a:hover{
+    opacity: 1;
+}
+
+.head,.name strong,.name span,.menu a{
+    opacity: 0.55;
+}
+
+.head{
+    height: 120px;
+    width: 120px;
+    border: 4px solid #fff;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px
+}
+
+.name{
+    color: white;
+}
+
+.name strong{
+    font-size: 36px;
+    line-height: 50px;
+}
+
+
+.name span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu{  
+    margin-top: 30px;
+    height: 30px;
+    font-family: '宋体';
+}
+
+.menu a{
+    font-weight: bold;
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}

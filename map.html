@@ -1,0 +1,27 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+	<style type="text/css">
+		#baiduMap{
+			width: 780px;
+			height: 480px;
+		}
+	</style>
+</head>
+<body>
+	<div id="baiduMap"></div>
+</body>
+<script type="text/javascript">
+	var map = null;
+	var inLog = 116.6278802;
+	var inLat = 23.4189873;
+
+	map = new BMap.Map('baiduMap');
+	var opts = {
+        type: BMAP_NAVIGATION_CONTROL_LARGE
+    };
+    map.addControl(new BMap.NavigationControl(opts)); 	//加入控件
+    map.addControl(new BMap.ScaleControl());
+    var point = new BMap.Point(inLog, inLat); 			//创建点坐标
+    map.centerAndZoom(point, 15); 						//根据坐标对地图初始化
+</script>
